@@ -1,18 +1,4 @@
 <div class="content-box">
   <h2>Crate new listing</h2>
-  <form (ngSubmit)="onSubmit()">
-
-    <label>Name:</label>
-    <input type="text" id="name" name="name" [(ngModel)]="name">
-    <br>
-
-    <label>Description:</label>
-    <input type="text" id="description" name="description" [(ngModel)]="description">
-    <br>
-
-    <label>Price:</label>
-    <input type="text" id="price" name="price" [(ngModel)]="price">
-    <br>
-    <button type="submit">Submit</button>
-  </form>
+  <app-listing-data-form buttonText="add new item" (submitted)="onAdd()"></app-listing-data-form>
 </div>
