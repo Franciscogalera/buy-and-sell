@@ -1,18 +1,19 @@
-<div class="content-box">
-  <h2>Crate new listing</h2>
-  <form (ngSubmit)="onSubmit()">
+<form (ngSubmit)="onSubmit()">
 
+  <div class="input-container">
     <label>Name:</label>
     <input type="text" id="name" name="name" [(ngModel)]="name">
-    <br>
+  </div>
 
+  <div class="input-container">
     <label>Description:</label>
     <input type="text" id="description" name="description" [(ngModel)]="description">
-    <br>
+  </div>
 
+  <div class="input-container">
     <label>Price:</label>
     <input type="text" id="price" name="price" [(ngModel)]="price">
-    <br>
-    <button type="submit">Submit</button>
-  </form>
-</div>
+  </div>
+
+  <button type="submit">{{buttonText}}</button>
+</form>
